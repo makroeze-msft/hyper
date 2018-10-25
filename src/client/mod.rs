@@ -15,7 +15,7 @@ use http;
 use tokio::reactor::Handle;
 pub use tokio_service::Service;
 
-use header::{Host};
+use hyper_old_types::header::{Host};
 use proto;
 use proto::request;
 use Method;
@@ -30,7 +30,7 @@ pub use self::connect::{HttpConnector, Connect};
 use self::background::{bg, Background};
 
 pub mod conn;
-mod connect;
+pub mod connect;
 //TODO(easy): move cancel and dispatch into common instead
 pub(crate) mod dispatch;
 mod dns;

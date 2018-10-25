@@ -4,8 +4,8 @@ use std::fmt;
 
 use bytes::BytesMut;
 
-use header::{Connection, ConnectionOption, Expect};
-use header::Headers;
+use hyper_old_types::header::{Connection, ConnectionOption, Expect};
+use hyper_old_types::header::Headers;
 use method::Method;
 use status::StatusCode;
 use uri::Uri;

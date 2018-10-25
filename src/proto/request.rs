@@ -6,7 +6,7 @@ use std::net::SocketAddr;
 #[cfg(feature = "compat")]
 use http;
 
-use header::Headers;
+use hyper_old_types::header::Headers;
 use proto::{Body, MessageHead, RequestHead, RequestLine};
 use method::Method;
 use uri::{Uri};

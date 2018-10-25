@@ -543,7 +543,7 @@ where I: AsyncRead + AsyncWrite,
     // If we know the remote speaks an older version, we try to fix up any messages
     // to work with our older peer.
     fn enforce_version(&mut self, head: &mut MessageHead<T::Outgoing>) {
-        use header::Connection;
+        use hyper_old_types::header::Connection;
 
         let wants_keep_alive = if self.state.wants_keep_alive() {
             let ka = head.should_keep_alive();

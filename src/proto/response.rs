@@ -5,7 +5,7 @@ use std::mem::replace;
 #[cfg(feature = "compat")]
 use http;
 
-use header::{Header, Headers};
+use hyper_old_types::header::{Header, Headers};
 use proto::{MessageHead, ResponseHead, Body};
 use status::StatusCode;
 use version::HttpVersion;

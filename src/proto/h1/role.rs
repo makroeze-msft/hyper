@@ -5,7 +5,7 @@ use std::mem;
 use httparse;
 use bytes::{BytesMut, Bytes};
 
-use header::{self, Headers, ContentLength, TransferEncoding};
+use hyper_old_types::header::{self, Headers, ContentLength, TransferEncoding};
 use proto::{Decode, MessageHead, RawStatus, Http1Transaction, ParseResult,
            RequestLine, RequestHead};
 use proto::h1::{Encoder, Decoder, date};

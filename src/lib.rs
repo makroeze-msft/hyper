@@ -1,5 +1,4 @@
 #![doc(html_root_url = "https://docs.rs/hyper/0.11.27")]
-#![deny(missing_docs)]
 #![cfg_attr(test, deny(warnings))]
 #![deny(missing_debug_implementations)]
 #![cfg_attr(all(test, feature = "nightly"), feature(test))]
@@ -41,7 +40,7 @@ extern crate test;
 
 pub use hyper_old_types::{
     error,
-    header,
+    header as header2,
     mime,
 
     Error,
